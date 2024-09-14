@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+   <title>School Portal - Building</title>
+   <link rel="stylesheet" href="src/css/main.css">
+   <link rel="stylesheet" href="src/css/docs.css">
+   <script src="src/fontawesome/all.js"></script>
+   <script src="src/fontawesome/fontawesome.js"></script>
+   <script src="src/fontawesome/brands.js"></script>
+</head>
+<html>
+<body>
+   <div id="header">
+       <div id="header-left">
+           <h1>School Portal</h1>
+       </div>
+       <div id="header-right">
+           <ul>
+               <a href="/">Home</a>
+           </ul>
+           <ul>
+               <a href="./downloads">Downloads</a>
+           </ul>
+           <ul>
+               <a href="./building">Building</a>
+           </ul>
+       </div>
+   </div>
+   <div id="sidebar">
+        <ul>
+            <li><a href="#windows">Windows Guide</a></li>
+            <li><a href="#linux">Linux Guide</a></li>
+            <li><a href="#macos">macOS Guide</a></li>
+        </ul>
+   </div>
+   <div id="content">
+        <!-- Windows Guide -->
+        <div id="windows">
+            <h1>Windows Guide</h1>
+            <p>Follow these steps to build the app for Windows using Electron Forge.</p>
+            <div class="code-block">
+                <h2>Step 1: Install Node.js</h2>
+                <pre><code>choco install nodejs</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 2: Install Yarnpkg</h2>
+                <pre><code>corepack enable</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 3: Clone the Repository</h2>
+                <pre><code>git clone https://github.com/invranet/school-portal</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 4: Install All Packages</h2>
+                <p>Reload your terminal to ensure all environment variables are set properly.</p>
+                <pre><code>yarn</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 5: Build the App</h2>
+                <pre><code>yarn dist:win</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <p>Your app will be available in the <code>dist/</code> folder.</p>
+        </div>
+
+        <!-- Linux Guide -->
+        <div id="linux">
+            <h1>Linux Guide</h1>
+            <p>Follow these steps to build the app for Linux using Electron Forge.</p>
+            <div class="code-block">
+                <h2>Step 1: Install Node.js</h2>
+                <pre><code>sudo apt install nodejs npm</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 2: Install Yarnpkg</h2>
+                <pre><code>corepack enable</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 3: Clone the Repository</h2>
+                <pre><code>git clone https://github.com/invranet/school-portal</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 4: Install All Packages</h2>
+                <pre><code>yarn</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 5: Build the App</h2>
+                <pre><code>yarn dist:linux</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <p>Your app will be available in the <code>dist/</code> folder.</p>
+        </div>
+
+        <!-- macOS Guide -->
+        <div id="macos">
+            <h1>macOS Guide</h1>
+            <p>Follow these steps to build the app for macOS using Electron Forge.</p>
+            <div class="code-block">
+                <h2>Step 1: Install Node.js</h2>
+                <pre><code>brew install node</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 2: Install Yarnpkg</h2>
+                <pre><code>corepack enable</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 3: Clone the Repository</h2>
+                <pre><code>git clone https://github.com/invranet/school-portal</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 4: Install All Packages</h2>
+                <pre><code>yarn</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 5: Build the App</h2>
+                <pre><code>yarn dist:mac</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <p>Your app will be available in the <code>dist/</code> folder.</p>
+        </div>
+   </div>
+   <script src="src/js/copyCodeBlock.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+   <title>School Portal Project</title>
+    <link rel="stylesheet" href="src/css/downloads.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script src="src/fontawesome/all.js"></script>
+    <script src="src/fontawesome/fontawesome.js"></script>
+    <script src="src/fontawesome/brands.js"></script>
+    <style>
+        html {background-color: #1a1a2e;}
+    </style>
+</head>
+<html>
+<body>
+   <div id="header">
+       <div id="header-left">
+           <h1>School Portal</h1>
+       </div>
+       <div id="header-right">
+           <ul>
+               <a href="/">Home</a>
+           </ul>
+           <ul>
+               <a href="/downloads">Downloads</a>
+           </ul>
+           <ul>
+            <a href="./building">Building</a>
+        </ul>
+       </div>
+    </div>
+    <div id="content">
+        <p>Download our app today!</p>
+        <div id="downloadContainer">
+            <div id="githubContainer" class="downloadCard">
+                <h1>Github</h1>
+                <p>Get our source from GitHub, our mainstream source control.</p>
+                <button onclick="window.open('https://github.com/invranet/school-portal')">
+                    <i class="fa-brands fa-github"></i>
+                    Go to GitHub.
+                </button>
+            </div>
+        </div>
+        <p class="download-helper">Download your Operating System's respected file here.</p>
+        <div id="downloadSectorSelection">
+            <div class="download-container">
+                <button id="download-btn" class="download-btn">
+                    <div id="buttonIconography">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    Download for <span id="os-name">Your OS</span>
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" onfocusout="collapseDropDown()" id="dropdown-toggle">▼</button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu"></div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/populateDownloads.js"></script>
+    <script src="src/js/handleDownloadbtn.js"></script>        
+</body>
+</html>

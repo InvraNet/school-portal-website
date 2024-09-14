@@ -1,7 +1,59 @@
  <!DOCTYPE html>
+ <head>
+    <title>School Portal Project</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <style>
+        html {background-color: #1a1a2e;}
+    </style>
+ </head>
 <html>
 <body>
-<h1>We are currently working on this website.</h1>
-<p>We are right now in the middle of reworking this website, please give us a while to get everything working.</p>
+    <div id="header">
+        <div id="header-left">
+            <h1>School Portal</h1>
+        </div>
+        <div id="header-right">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="./downloads">Downloads</a>
+            </ul>
+            <ul>
+                <a href="./building">Building</a>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <p>School Portal is an application for people to access their school resources online, off this one app, to make it a streamlines process.</p>
+        <p>We are proudly open-source.</p>
+        <div id="toolsets">
+            <p>We are using the follow below to make it happen</p>
+            <div class="toolWrap">
+                <a href="https://www.electronjs.org/" target="_blank">
+                    <img class="toolicon" src="src/img/electronjs.png" alt="Electron JS">
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <img class="toolicon" src="src/img/github.png" alt="GitHub">
+                </a>
+                <a href="https://cloudflare.com" target="_blank">
+                    <img class="toolicon" src="src/img/cloudflare.png" alt="Cloudflare">
+                </a>
+                <a href="https://nsis.sourceforge.io/Main_Page" target="_blank">
+                    <img class="toolicon" src="src/img/nsis.png" alt="Nullsoft Scriptable Installer">
+                </a>
+                <a href="https://github.com/Squirrel/Squirrel.Windows" target="_blank">
+                    <img class="toolicon" src="src/img/squirrel.png" alt="Squirrel">
+                </a>
+            </div>
+        </div>
+        <div id="classexTooltip">
+            <span></span>
+        </div>
+        <h1>Support</h1>
+        <p>As of right now we support all mainstream operating systems. This will include Windows 10/11, macOS, Arch Linux, Debian, Ubuntu, Fedora, SUSE, and more! </p>
+        <p>If you need to build it on your own, because we haven't pre-packaged an installer, use <a style="text-decoration: underline;" href="./building">our documentation for building</a> our Electron app with Electron-Forge.</p>
+    </div>
+    <script src="src/js/tooltip.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+#sidebar {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 45px);
+    background-color: var(--card-background-color);
+    overflow-y: auto;
+    padding-top: 20px;
+    z-index: 400;
+    padding: 15px;
+}
+
+#sidebar ul li {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 650;
+}
+
+#sidebar ul li:hover {
+    background-color: rgb(35, 53, 100);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.code-block pre {
+    position: relative;
+    padding: 15px;
+}
+
+pre, code {
+    background-color: #2c2c54;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    position: relative;
+    top: 0;
+}
+
+.code-block {
+    margin-bottom: 20px;
+}
+
+.code-block pre button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px 7px;
+    border: 3px solid #6161b9;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 122);
+}

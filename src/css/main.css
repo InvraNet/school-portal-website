@@ -1,0 +1,110 @@
+@import "reset.css";
+
+/* Theme */
+:root {
+    --background-color: #1a1a2e;
+    --card-background-color: #16213e;
+    --text-color: #eaeaea;
+    --heading-color: #ffffff; 
+    --accent-color: #ff6f61;
+    --secondary-accent-color: #4ecca3;
+    --secondary-accent-active: #3a997a;
+    --input-background-color: #2c2c54;
+    --input-text-color: #dcdcdc;
+    --border-color: #3a3a56;
+    --hover-color: #3f51b5;
+    --shadow-color: rgba(0, 0, 0, 0.6); 
+  }
+  
+html { 
+    scroll-behavior: smooth; 
+} 
+
+
+#header {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    background-color: var(--card-background-color);
+    color: rgb(245,245,245);
+    font-size: 25px;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight: 600;
+    user-select: none;
+    display: flex;
+}
+
+#header-right {
+    display: flex;
+}
+
+#header-right ul {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+}
+
+#header-right ul a {
+    color: azure;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all ease-in-out 0.15s;
+}
+
+#header-right ul a:hover {
+    color: var(--hover-color);
+}
+
+#content {
+    padding: 10px;
+    background-color: var(--background-color);
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+.toolicon {
+    height: 50px;
+}
+
+.toolWrap {
+    margin-top: 15px;
+    display: flex;
+}
+
+.toolWrap img {
+    transition: all ease-in-out 0.25s;
+}
+
+.toolWrap img:hover {
+    transform: scale(1.2);
+}
+
+#toolsets {
+    position: relative;
+    top: 0;
+    margin: 5px auto;
+    width: 50%;
+    padding: 10px;
+    z-index: 30;
+}
+
+#toolsets a img {
+    position: static;
+    top: 0;
+    z-index: 30;
+}
+
+#toolsets div a {
+    margin: 0 auto;
+}
+
+#toolsets p {
+    text-align: center;
+}
+
+#classexTooltip {
+    position: absolute;
+    z-index: 8888;
+    top: 20;
+}

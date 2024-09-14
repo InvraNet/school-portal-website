@@ -1,0 +1,154 @@
+.downloadCard {
+    background-color: var(--card-background-color);
+    width: 350px;
+    height: 200px;
+    padding: 15px;
+}
+
+.downloadCard h1 {
+    font-size: 25px;
+}
+
+.downloadCard p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.downloadCard button {
+    background-color: var(--accent-color);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    position: realtive;
+    margin-top: 35px;
+    bottom: 1px;
+    border-radius: 5px;
+    transition: all ease-in-out 0.25s;
+}
+
+.downloadCard button:hover {
+    background-color: var(--secondary-accent-color);    
+}
+
+.downloadCard * {
+    user-select: none;
+}
+
+#downloadContainer {
+    display: table;
+    margin: auto;
+    padding: 10px;
+}
+
+.download-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+.download-btn {
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: background-color ease-in-out 0.15s;
+}
+
+.download-btn:hover {
+    background-color: var(--secondary-accent-color);
+    color: #fff;
+}
+
+.download-btn ~ .dropdown .dropdown-toggle {
+    transition: background-color ease-in-out 0.15s;
+}
+
+.download-btn:hover ~ .dropdown .dropdown-toggle {
+    background-color: var(--secondary-accent-color);
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: var(--secondary-accent-color);
+}
+
+.download-btn span {
+    margin-left: 3px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+}
+.download-btn,
+.dropdown-toggle {
+    transition: background-color ease-in-out 0.15s;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--accent-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dropdown-menu.show {
+    max-height: 300px;
+}
+
+.dropdown-menu a {
+    margin: 5px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--secondary-accent-color);
+    border-radius: 5px;
+}
+
+#download-btn svg {
+    align-self: center;
+    margin-right: 5px;
+}
+
+.download-container {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.download-helper {
+    text-align: center;
+}
+
+#downloadSectorSelection {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
