@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+   <title>Building on macOS</title>
+   <link rel="stylesheet" href="../../src/css/main.css">
+   <link rel="stylesheet" href="../../src/css/docs.css">
+   <script src="../../src/fontawesome/all.js"></script>
+   <script src="../../src/fontawesome/fontawesome.js"></script>
+   <script src="../../src/fontawesome/brands.js"></script>
+</head>
+<html>
+<body>
+   <div id="header">
+       <div id="header-left">
+           <h1>School Portal</h1>
+       </div>
+       <div id="header-right">
+           <ul>
+               <a href="/">Home</a>
+           </ul>
+           <ul>
+               <a href="/downloads">Downloads</a>
+           </ul>
+           <ul>
+                <a href="/docs/">Documentation</a>
+           </ul>
+       </div>
+   </div>
+   <div id="sidebar">
+        <ul>
+            <li><a class="docTree1" href="/docs/">Documentation Home</a></li>
+            <li id="buildingLinkButton"><a class="docTree1" class="docTree2" href="/docs/building/">Building</a></li>
+            <div id="buildingLinksGroup">
+                <li><a class="docTree2" href="/docs/building/windows">Windows Guide</a></li>
+                <li><a class="docTree2" href="/docs/building/linux">Linux Guide</a></li>
+                <li class="activeDoc"><a class="docTree2" href="/docs/building/macos">macOS Guide</a></li>
+            </div>
+        </ul>
+   </div>
+   <div id="content">
+        <div id="macos">
+            <h1>Building School Portal on macOS</h1>
+            <p>Follow these steps to build the app for macOS using Electron Forge.</p>
+            <div class="code-block">
+                <h2>Step 1: Install Node.js</h2>
+                <pre><code>brew install node</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 2: Install Yarnpkg</h2>
+                <pre><code>corepack enable</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 3: Clone the Repository</h2>
+                <pre><code>git clone https://github.com/invranet/school-portal</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 4: Install All Packages</h2>
+                <pre><code>yarn</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <div class="code-block">
+                <h2>Step 5: Build the App</h2>
+                <pre><code>yarn dist:mac</code><button><i class="fa-regular fa-clipboard"></i></button></pre>
+            </div>
+            <p>Your app will be available in the <code>dist/</code> folder.</p>
+        </div>
+   </div>
+   <script src="../../src/js/copyCodeBlock.js"></script>
+   <script src="../../src/js/handleSidebar.js"></script>
+</body>
+</html>

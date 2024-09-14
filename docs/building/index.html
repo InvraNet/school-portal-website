@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Building School Portal</title>
+   <link rel="stylesheet" href="../../src/css/main.css">
+   <link rel="stylesheet" href="../../src/css/docs.css">
+   <script src="../../src/fontawesome/all.js"></script>
+   <script src="../../src/fontawesome/fontawesome.js"></script>
+   <script src="../../src/fontawesome/brands.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">
+            <h1>School Portal</h1>
+        </div>
+        <div id="header-right">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/downloads">Downloads</a>
+            </ul>
+            <ul>
+                 <a href="/docs/">Documentation</a>
+            </ul>
+        </div>
+    </div>
+   <div id="sidebar">
+        <ul>
+            <li><a class="docTree1" href="/docs/">Documentation Home</a></li>
+            <li id="buildingLinkButton" class="activeDoc"><a class="docTree1" class="docTree2" href="/docs/building/">Building</a></li>
+            <div id="buildingLinksGroup">
+                <li><a class="docTree2" href="/docs/building/windows">Windows Guide</a></li>
+                <li><a class="docTree2" href="/docs/building/linux">Linux Guide</a></li>
+                <li><a class="docTree2" href="/docs/building/macos">macOS Guide</a></li>
+            </div>
+        </ul>
+   </div>
+   <div id="content">
+        <h1>Building the School Portal</h1>
+        <p>This guide provides an overview of the prerequisites required to build the School Portal application. Before you start the build process, make sure you have the following tools installed:</p>
+        
+        <h2>Prerequisites</h2>
+        
+        <h3>1. Git</h3>
+        <p>Git is a version control system that you will need to clone the source code repository. You can download and install Git from <a href="https://git-scm.com/">git-scm.com</a>.</p>
+        
+        <h3>2. Node.js</h3>
+        <p>Node.js is a runtime environment required for running build tools. It is usually bundled with the application, but if not, you can install it from <a href="https://nodejs.org/">nodejs.org</a>.</p>
+        
+        <h3>3. Yarn</h3>
+        <p>Yarn is a package manager used for managing dependencies. It simplifies the process of installing and managing packages. Install Yarn from <a href="https://yarnpkg.com/">yarnpkg.com</a>.</p>
+        
+        <p>Ensure you have all these tools installed and properly configured before starting the build process. They are essential for compiling and running the School Portal application successfully.</p>
+   </div>
+   <script src="../../src/js/copyCodeBlock.js"></script>
+   <script src="../../src/js/handleSidebar.js"></script>
+</body>
+</html>
