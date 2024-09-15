@@ -2,22 +2,23 @@
 
 /* Theme */
 :root {
-    --background-color: #1a1a2e;
-    --card-background-color: #16213e;
-    --text-color: #eaeaea;
-    --heading-color: #ffffff; 
-    --accent-color: #ff6f61;
-    --secondary-accent-color: #4ecca3;
-    --secondary-accent-active: #3a997a;
-    --input-background-color: #2c2c54;
-    --input-text-color: #dcdcdc;
-    --border-color: #3a3a56;
-    --hover-color: #3f51b5;
-    --shadow-color: rgba(0, 0, 0, 0.6); 
+    --background-color: #2b2d42;
+    --card-background-color: #3a405a;
+    --text-color: #f8f9fa;
+    --heading-color: #ffffff;
+    --accent-color: #ff5f5f;
+    --secondary-accent-color: #50c9a3;
+    --secondary-accent-active: #3ba687;
+    --input-background-color: #44475a;
+    --input-text-color: #e5e5e5;
+    --border-color: #4b526a;
+    --hover-color: #6272a4;
+    --shadow-color: rgba(0, 0, 0, 0.4);
   }
   
 html { 
     scroll-behavior: smooth; 
+    background-color: var(--background-color);
 } 
 
 
