@@ -14,13 +14,12 @@
     --border-color: #4b526a;
     --hover-color: #6272a4;
     --shadow-color: rgba(0, 0, 0, 0.4);
-  }
-  
+}
+
 html { 
     scroll-behavior: smooth; 
     background-color: var(--background-color);
-} 
-
+}
 
 #header {
     position: sticky;
@@ -55,6 +54,45 @@ html {
 
 #header-right ul a:hover {
     color: var(--hover-color);
+}
+
+#hamburger-menu {
+    border-radius: 15px;
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: 4px solid #4a4f73;
+    width: 40px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+#mobile-nav {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 100%;
+    background-color: var(--card-background-color);
+    z-index: 1000;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
+#mobile-nav ul {
+    list-style: none;
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+}
+
+#mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 20px;
 }
 
 #content {
@@ -108,4 +146,31 @@ html {
     position: absolute;
     z-index: 8888;
     top: 20;
+}
+
+@media only screen and (max-width: 800px) {
+    #header {
+        height: 100%;
+    }
+    #header-right {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+    #content {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:801px) {
+    #mobile-nav {
+        max-height: 0;
+    }
+}
+
+#mobile-nav.navVisible {
+    max-height: 300px;
 }

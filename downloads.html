@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
    <title>School Portal Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/downloads.css">
     <link rel="stylesheet" href="src/css/main.css">
     <script src="src/fontawesome/all.js"></script>
@@ -12,21 +13,33 @@
 </head>
 <html>
 <body>
-   <div id="header">
-       <div id="header-left">
-           <h1>School Portal</h1>
-       </div>
-       <div id="header-right">
-           <ul>
-               <a href="/">Home</a>
-           </ul>
-           <ul>
-               <a href="/downloads">Downloads</a>
-           </ul>
-           <ul>
-            <a href="/docs/">Documentation</a>
-        </ul>
-       </div>
+    <div id="header">
+        <div id="header-left">
+            <h1>School Portal</h1>
+        </div>
+        <div id="header-right">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/downloads">Downloads</a>
+            </ul>
+            <ul>
+                <a href="/docs/">Documentation</a>
+            </ul>
+        </div>
+        <button id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+        <div id="mobile-nav">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/downloads">Downloads</a>
+            </ul>
+            <ul>
+                <a href="/docs/">Documentation</a>
+            </ul>
+        </div>
     </div>
     <div id="content">
         <p>Download our app today!</p>
@@ -57,6 +70,7 @@
         </div>
     </div>
     <script src="src/js/populateDownloads.js"></script>
-    <script src="src/js/handleDownloadbtn.js"></script>        
+    <script src="src/js/handleDownloadbtn.js"></script>      
+    <script src="src/js/headerHandle.js"></script>  
 </body>
 </html>

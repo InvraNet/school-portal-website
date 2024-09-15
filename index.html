@@ -2,6 +2,10 @@
  <head>
     <title>School Portal Project</title>
     <link rel="stylesheet" href="src/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/fontawesome/all.js"></script>
+    <script src="src/fontawesome/fontawesome.js"></script>
+    <script src="src/fontawesome/brands.js"></script>
     <style>
         html {background-color: #2b2d42}
     </style>
@@ -13,6 +17,18 @@
             <h1>School Portal</h1>
         </div>
         <div id="header-right">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/downloads">Downloads</a>
+            </ul>
+            <ul>
+                <a href="/docs/">Documentation</a>
+            </ul>
+        </div>
+        <button id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+        <div id="mobile-nav">
             <ul>
                 <a href="/">Home</a>
             </ul>
@@ -58,5 +74,6 @@
         <p>If you need to build it on your own, because we haven't pre-packaged an installer, use <a style="text-decoration: underline;" href="./building">our documentation for building</a> our Electron app with Electron-Forge.</p>
     </div>
     <script src="src/js/tooltip.js"></script>
+    <script src="src/js/headerHandle.js"></script>
 </body>
 </html>

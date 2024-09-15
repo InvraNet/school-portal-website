@@ -1,0 +1,36 @@
+@import "reset.css";
+
+#header {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    background-color: #2b2a33;
+}
+
+#content {
+    margin-top: 50px;
+    padding: 25px;
+}
+
+#content fieldset {
+    border: 3px solid #6b687f;
+    padding: 15px;
+    background-color: #403e4c;
+}
+
+#content fieldset h1 {
+    color: #ff2600;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+html {
+    background-color: rgb(75, 73, 89);
+    color: white;
+    user-select: none;
+}
+
+#header p {
+    font-size: 20px;
+}
