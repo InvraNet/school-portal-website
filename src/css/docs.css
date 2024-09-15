@@ -1,5 +1,5 @@
 html {
-    background-color: #1a1a2e;
+    background-color: var(--background-color)
 }
 
 #sidebar {
@@ -48,7 +48,7 @@ html {
 }
 
 pre, code {
-    background-color: #2c2c54;
+    background-color: var(--card-background-color);
     color: #ffffff;
     padding: 10px;
     border-radius: 5px;
@@ -75,9 +75,9 @@ pre, code {
     top: 10px;
     right: 10px;
     padding: 2px 7px;
-    border: 3px solid #6161b9;
+    border: 3px solid #4a4f73;
     border-radius: 10px;
-    background-color: rgb(64, 64, 122);
+    background-color: #434768;
 }
 
 .activeDoc {
