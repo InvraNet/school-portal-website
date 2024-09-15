@@ -111,3 +111,24 @@ pre, code {
 .hidden {
     display: none;
 }
+
+.hidden label {
+    rotate: 90deg;
+}
+
+.docheadersep {
+    background-color: #6b76a6;
+    height: 1px;
+    margin: 7px;
+}
+
+#sidebar label {
+    position: absolute;
+    right: 35px;
+}
+
+#buildingLinkButtonIndic.hidden {
+    display: block;
+    rotate: -90deg;
+    top: 75px;
+}
