@@ -109,6 +109,15 @@ html {
 .toolWrap {
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toolicon {
+    height: 50px;
+    max-width: 100%;
+    margin: 5px;
+    object-fit: contain;
 }
 
 .toolWrap img {
@@ -123,9 +132,10 @@ html {
     position: relative;
     top: 0;
     margin: 5px auto;
-    width: 50%;
+    width: 85%;
     padding: 10px;
     z-index: 30;
+    overflow-wrap: anywhere;
 }
 
 #toolsets a img {

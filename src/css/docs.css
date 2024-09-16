@@ -50,18 +50,17 @@ html {
 
 .code-block pre {
     position: relative;
-    padding: 15px;
 }
 
 pre, code {
     background-color: var(--card-background-color);
     color: #ffffff;
-    padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
     font-family: 'Courier New', Courier, monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
+    background-color: #434768;
 }
 
 #content {
@@ -140,7 +139,7 @@ pre, code {
 #buildingLinkButtonIndic.hidden {
     display: block;
     rotate: -90deg;
-    top: 75px;
+    top: 70px;
 }
 
 
@@ -175,4 +174,9 @@ pre, code {
     #mobi-navbar-toggle {
         display: block;
     }
+}
+
+.hljs {
+    background: #434768;
+    color: var(--text-color);
 }
